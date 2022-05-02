@@ -2,12 +2,15 @@
 --primary: rgb(148,130,255);
 --primary-hover: rgb(112, 97, 194);
 --secondary: rgb(88,202,234);
---font-family-sans-serif: 'Poppins', sans-serif;
+}
+
+*{
+    font-family: poppins, sans-serif;
 }
 
 .custom-brand {
     color: var(--primary);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
 }
 
@@ -36,17 +39,6 @@
 
 .link-primary:hover {
     color: black!important;
-}
-
-.custombg {
-    background-size: cover;
-    background-image: url("/assets/jp-memory-game.png");
-}
-
-.custom-bg-2 {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("/assets/chat-app.png");
 }
 
 .card {
