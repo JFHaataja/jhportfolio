@@ -1,0 +1,111 @@
+:root {
+--primary: rgb(148,130,255);
+--primary-hover: rgb(112, 97, 194);
+--secondary: rgb(88,202,234);
+--font-family-sans-serif: 'Poppins', sans-serif;
+}
+
+.custom-brand {
+    color: var(--primary);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.custom-brand:hover {
+    color: black;
+
+}
+
+.text-primary {
+    color: var(--primary)!important
+}
+
+.btn-primary {
+    background-color: var(--primary)!important;
+    border: var(--primary) solid .1rem!important;
+}
+
+.btn-primary:hover {
+    background-color: black!important;
+    border: black solid .1rem!important;
+}
+
+.link-primary {
+    color: var(--primary)!important;
+}
+
+.link-primary:hover {
+    color: black!important;
+}
+
+.custombg {
+    background-size: cover;
+    background-image: url("/assets/jp-memory-game.png");
+}
+
+.custom-bg-2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/assets/chat-app.png");
+}
+
+.card {
+    border: none;
+}
+
+.card-header {
+    background-color: transparent;
+}
+
+.card h5 {
+    color: var(--primary);
+    background-color: transparent;
+}
+
+.card-body {
+    background: #F2F2F2;
+}
+
+.card-body p {
+    color: #525252;
+}
+
+.card-img, .card-img-top {
+    object-fit: cover;
+    
+}
+
+.card-header {
+    border-bottom: 0;
+}
+
+.custom-svg {
+    width: 2rem;
+    height: auto;
+    fill: black;
+    vertical-align: middle;
+}
+
+.custom-svg-2 {
+    width: 2rem;
+    height: auto;
+    fill: var(--primary)!important;
+    vertical-align: middle;
+}
+
+.custom-svg-2:hover {
+    fill: black;
+}
+
+.personal-photo {
+    background-color: var(--primary);
+}
+
+footer
+{
+    background-color: var(--primary);
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
