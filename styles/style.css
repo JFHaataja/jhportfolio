@@ -33,12 +33,30 @@
     border: black solid .1rem!important;
 }
 
+.btn-outline-primary {
+    
+    border: var(--primary) solid .1rem!important;
+}
+
+.btn-outline-primary:hover {
+    background-color: black!important;
+    border: black solid .1rem!important;
+}
+
 .link-primary {
     color: var(--primary)!important;
 }
 
 .link-primary:hover {
     color: black!important;
+}
+
+.link-primary-outline {
+    color: black;
+}
+
+.link-primary-outline:hover {
+    color: white;
 }
 
 .card {
