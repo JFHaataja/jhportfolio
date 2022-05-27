@@ -59,9 +59,9 @@ a.custom-brand:hover::before
     2px 4px 16px 0px rgba(194, 147, 255, 0.7)!important;
 } */
 
-.navbar-nav .nav-link {
+/* .navbar-nav .nav-link {
     text-align: center;
-}
+} */
 
 .navbar-nav .nav-item .nav-link {
     position: relative;
