@@ -56,10 +56,6 @@ a.custom-brand:hover::before
     2px 4px 16px 0px rgba(194, 147, 255, 0.7)!important;
 } 
 
- /* .navbar-nav .nav-link {
-    text-align: center;
-}  */
-
 .navbar-nav .nav-item .nav-link {
     position: relative;
 }
@@ -90,21 +86,6 @@ a.custom-brand:hover::before
     transform: scale(1);
 }
 
-.animation-ease-in-left {
-    animation: ease-in-left .8s ease-in forwards;
-    opacity: 0;
-}
-
-.animation-ease-in-right {
-    animation: ease-in-right .8s ease-in forwards;
-    opacity: 0;
-}
-
-.animation-move-down {
-    animation: moveDown 1s ease-in-out forwards;
-    opacity: 0;
-}
-
 .animation-rise-up {
     animation: rise-up 1s ease-in-out forwards;
     opacity: 0;
@@ -127,8 +108,6 @@ a.custom-brand:hover::before
 .custom-a:hover {
     fill: black!important;
 }
-
-
 
 .btn-primary {
     background-color: var(--primary)!important;
@@ -251,6 +230,45 @@ footer
     width: 100%;
 }
 
+@keyframes rise-up {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .animation-move-down {
+        animation: none !important;
+    }
+
+    .animation-ease-in {
+        animation: none!important;
+    }
+
+    .animation-rise-up {
+        animation: none!important;
+    }
+}
+
+/* .animation-ease-in-left {
+    animation: ease-in-left .8s ease-in forwards;
+    opacity: 0;
+}
+
+.animation-ease-in-right {
+    animation: ease-in-right .8s ease-in forwards;
+    opacity: 0;
+}
+
+.animation-move-down {
+    animation: moveDown 1s ease-in-out forwards;
+    opacity: 0;
+} */
+
 /* @media only screen and (max-width: 400px){
     .card-body {
         box-shadow: none;
@@ -259,7 +277,7 @@ footer
 
 
 
-@keyframes introLoad {
+/* @keyframes introLoad {
     from {
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
@@ -299,24 +317,4 @@ footer
         transform: translateX(0);
         opacity: 1;
     }
-}
-
-@keyframes rise-up {
-    from {
-        transform: translateY(100px);
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-    .animation-move-down {
-        animation: none !important;
-    }
-
-    .animation-ease-in {
-        animation: none!important;
-    }
-}
+} */
