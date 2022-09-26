@@ -30,6 +30,10 @@
     z-index: 100;
 }
 
+.vh-20 {
+    height: 30vh!important;
+}
+
 body {
     background-color: #ffffff;
     /* background-image: radial-gradient(#000000 0.5px, #ffffff 0.5px);
@@ -70,7 +74,64 @@ body {
     position: absolute;
     z-index: -1;
     background-size: contain;
+}
 
+.portfolio {
+    background: url(/assets/portfolio.svg) no-repeat 0% 0%;
+    position: absolute;
+    z-index: -2;
+    background-size: cover;
+    height: 50vh;
+}
+
+.custom-margin {
+    margin-top: 10em!important;
+}
+
+/* .hover-shadow:hover {
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 31px -2px rgb(0 0 0 / 10%),
+    0 8px 31px -2px rgb(0 0 0 / 10%);
+} */
+
+/*Text appears on top of card when hover*/
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: gainsboro;
+  }
+  
+  .card-body:hover .overlay {
+    opacity: 1!important;
+    box-shadow: 0 8px 31px -2px rgb(0 0 0 / 10%),
+    0 8px 31px -2px rgb(0 0 0 / 10%);
+  }
+  
+  .text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .what-i-like {
+    background: url(/assets/what-i-like-lg.svg) no-repeat 0% 0%;
+    position: absolute;
+    z-index: -1;
+    background-size: contain;
+    height: auto;
 }
 
 
