@@ -36,8 +36,9 @@
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0"> 
+  
   <!--Navbar-->
-  <nav class="navbar fixed-top navbar-expand-lg bg-white shadow px-xl-5">
+  <nav class="navbar navbar-expand-lg bg-white shadow px-xl-5">
     <div class="container-fluid px-lg-5">
       <a class="navbar-brand" href="#">
         <img src="/assets/logo-jon-haataja.svg" alt="Jon Haataja" class="img-fluid">
@@ -48,13 +49,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link text-secondary fs-5 me-3 ff-poppins" href="#scrollspyHeading1">projects</a>
+            <a class="nav-link text-secondary fs-5 me-4 ff-poppins" href="#scrollspyHeading1">projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary fs-5 me-3 ff-poppins" href="#scrollspyHeading2">about me</a>
+            <a class="nav-link text-secondary fs-5 me-4 ff-poppins" href="#scrollspyHeading2">about me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary fs-5 me-3 ff-poppins" href="#scrollspyHeading3">contact</a>
+            <a class="nav-link text-secondary fs-5 me-4 ff-poppins" href="#scrollspyHeading3">contact</a>
           </li>
           <li class="nav-item">
             <a href="https://github.com/JonHaatajaCareeria">
@@ -73,15 +74,28 @@
 
 <!--Hero section-->
 <div class="side-line"></div>
-<section class="container mb-sm-5 pb-sm-5 my-md-5 py-md-3 vh-100">
-	<div class="d-flex justify-content-end bottom-0">
-    <img src="/assets/my-img-scribble.svg" alt="" class="">
+<section class="container-fluid pe-0 me-0 end-0 overflow-hidden">
+  <div class="row min-vh-100">
+      <div class="col-md-6 col-lg-5 d-flex flex-column bottom-0 mt-lg-3 custom-margin-hero px-5">
+          <h1 class="fw-normal display-3 bg-circle lh-6 ps-lg-5">Hi! I'm <span class="fw-bold display-1">Jon.</span><br>
+            I'm a <span class="ff-poppins fw-bold opacity-50 display-1">Frontend</span><br><span class="ff-poppins fw-bold opacity-50 display-1">Developer</span> <span class="fw-bold ms-0 ps-0 display-2">&</span><br><span class="fw-bold display-5">UI/UX Designer.</span>
+          <span class="fw-bold display-1 position-relative animation-bob">&#11015;</span>
+          </h1>
+      </div>
+      <div class="col-md-6 col-lg-7 mobile-opacity-change">
+        <img src="/assets/my-hero-img.svg" alt="" class="min-w-100 img-size-cover top-0 end-0">
+      </div>
   </div>
-  <div class="position-relative">
-    <h1 class="fw-normal h-minus-margins display-2 bg-circle">Hi! I'm <span class="fw-bold">Jon.</span><br>
-      I'm a Frontend Developer. <span class="fs-5 fw-regular">(And a UI Designer. Sometimes.)</span></h1>
-    </div>
 </section>
+<!-- <section class="container-fluid vh-100 pe-0">
+  <div class="col-6 position-relative d-flex flex-column px-4">
+    <h1 class="fw-normal h-minus-margins display-2 bg-circle">Hi! I'm <span class="fw-bold">Jon.</span><br>
+      I'm a Frontend Developer. <span class="fs-5 fw-regular"> <br>(And a UI Designer. Sometimes.)</span></h1>
+    </div>
+	<div class="d-flex justify-content-end bottom-0">
+    <img src="/assets/my-hero-img.svg" alt="" class="end-0">
+  </div>
+</section> -->
 
    <!--Portfolio section-->
    <section>
@@ -98,44 +112,45 @@
     </div>
       <div class="container z-index-100 py-5 my-5 custom-margin">
                 <div class="row d-flex justify-content-center my-5 pt-5 pb-2">
-                  <div class="col-md-4 d-flex align-items-stretch p-5">
-                    <div class="card rounded-20 hover-shadow bg-white">
-                      <div class="card-body d-flex justify-content-center p-5 h-100">
-                        <img src="/assets/project-board-icon.svg" alt="" class="flex-fill">
-                        <div class="overlay d-flex flex-column justify-content-center text-center rounded-20">
+
+                  <div class="col-md-4 d-flex p-5">
+                    <div class="card" >
+                      <img src="/assets/proggis-img.svg" class="card-img-top p-5" alt="...">
+                      <div class="card-body">
+                        <!-- <img src="/assets/question-bulb-icon.svg" alt="" class="flex-fill"> -->
+                        <div class="overlay d-flex flex-column justify-content-center text-center h-100">
                           <div class="p-2">
                             <h3 class="fw-bold">Proggis</h3>
                             <p class="">Web app for advertising and organizing educational projects.</p>
                             <div class="d-flex justify-content-center">
-                              <span class="badge text-bg-secondary me-2">ASP .NET MVC</span>
-                              <span class="badge text-bg-secondary me-2">Bootstrap 5</span>
-                              <span class="badge text-bg-secondary">Azure</span>
+                              <span class="badge text-bg-secondary me-2">JavaScript</span>
+                              <span class="badge text-bg-secondary me-2">CSS3</span>
                             </div>
                             <hr>
-                            <div class="d-flex justify-content-end pe-3">
-                              <a href="#" class="stretched-link link-dark text-decoration-underline fs-5 fw-bolder">Read More</a>
+                            <div class="d-flex justify-content-end pe-3 pt-0">
+                              <a href="#" class=" link-dark text-decoration-underline fs-5 fw-bolder">Read More</a>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-  
-                  <div class="col-md-4 d-flex align-items-stretch p-5">
-                    <div class="card rounded-20 hover-shadow bg-white">
-                      <div class="card-body d-flex justify-content-center p-5 h-100">
-                        <img src="/assets/calendar-icon.svg" alt="d-flex align-items-center">
-                        <div class="overlay d-flex flex-column justify-content-center text-center h-100 rounded-20" >
-                          <div class="">
-                            <h3 class="fw-bold text-break px-3">Careerian Tivi-ohjaus</h3>
-                            <p >Web app for organizing meetings between teachers and students.</p>
+
+                  <div class="col-md-4 d-flex p-5">
+                    <div class="card">
+                      <img src="/assets/tivi-ohjaus-img.svg" class="card-img-top p-4" alt="...">
+                      <div class="card-body">
+                        <!-- <img src="/assets/question-bulb-icon.svg" alt="" class="flex-fill"> -->
+                        <div class="overlay d-flex flex-column justify-content-center text-center h-100">
+                          <div class="p-2">
+                            <h3 class="fw-bold">Careerian Tivi-ohjaus</h3>
+                            <p class="">Web app for organizing meetings between teachers and students.</p>
                             <div class="d-flex justify-content-center">
-                              <span class="badge text-bg-secondary me-2">ASP .NET MVC</span>
-                              <span class="badge text-bg-secondary me-2">Bootstrap 5</span>
-                              <span class="badge text-bg-secondary">Azure</span>
+                              <span class="badge text-bg-secondary me-2">JavaScript</span>
+                              <span class="badge text-bg-secondary me-2">CSS3</span>
                             </div>
                             <hr>
-                            <div class="d-flex justify-content-end pe-3">
+                            <div class="d-flex justify-content-end pe-3 pt-0">
                               <a href="#" class=" link-dark text-decoration-underline fs-5 fw-bolder">Read More</a>
                             </div>
                           </div>
@@ -144,11 +159,12 @@
                     </div>
                   </div>
   
-                  <div class="col-md-4 d-flex align-items-stretch p-5">
-                    <div class="card rounded-20 hover-shadow bg-white">
-                      <div class="card-body d-flex justify-content-center p-5">
-                        <img src="/assets/question-bulb-icon.svg" alt="" class="flex-fill">
-                        <div class="overlay d-flex flex-column justify-content-center text-center h-100 rounded-20">
+                  <div class="col-md-4 d-flex p-5">
+                    <div class="card" >
+                      <img src="/assets/memory-game-img.svg" class="card-img-top p-5" alt="...">
+                      <div class="card-body">
+                        <!-- <img src="/assets/question-bulb-icon.svg" alt="" class="flex-fill"> -->
+                        <div class="overlay d-flex flex-column justify-content-center text-center h-100">
                           <div class="p-2">
                             <h3 class="fw-bold">Japanese Memory Game</h3>
                             <p class="">A simple Japanese number memory game.</p>
@@ -162,7 +178,6 @@
                             </div>
                           </div>
                         </div>
-                        <a href="#" class="btn stretched-link"></a>
                       </div>
                     </div>
                   </div>
@@ -182,13 +197,13 @@
     <div class="container my-5 py-5">
       <div class="row">
           <div class="col-lg-7 d-flex justify-content-end mb-0 pb-0 pt-5 mt-5">
-            <img src="/assets/man-sitting.svg" alt="" class="h-75">
+            <img src="/assets/guy-sitting.svg" alt="" class="h-75">
           </div>
           <div class="col-lg-5">
                 <p class="ff-poppins fw-normal pb-0 mb-0 fs-4">about me</p>
                 <h2 class="fw-bold fs-1">I <span class="fs-2 pb-3">&#10084</span> Centering Divs</h2>
                 <p class="fs-3">I’m a Web Dev student at <a href="https://careeria.fi/" class="link-dark text-decoration-underline fw-bolder">Careeria</a> and I live in <span class="fw-bolder">Tampere</span>, Finland.
-                  Building fun and encaging user
+                  Building fun and engaging user
                   experiences is my no. 1 passion. As a developer and co-worker I’m <span class="fw-bolder">creative</span>, <span class="fw-bold">endlessly curious</span> and quite stubborn when it comes to finding and getting rid of <span class="ff-creepster">bugs</span>.</p>
                   <div class="d-flex justify-content-end">
                       <a href="#" class="link-dark text-decoration-underline fs-4 fw-bolder">Continue Reading</a>
@@ -201,8 +216,8 @@
 
 
 <!--What I like section-->
-<section class="pb-5 my-5 z-index-100 position-relative vh-100">
-  <div class="container-fluid what-i-like">
+<section class="pb-5 my-5 z-index-100  h-minus-margins">
+  <div class="container-fluid position-relative what-i-like">
     <div class="container my-5 py-5 ps-5">
       <div class="row">
           <div class="col-lg-6 d-flex justify-content-end mb-0 pb-0 pt-5 mt-5">
@@ -218,7 +233,7 @@
           </div>
           <div class="col-lg-5">
             <div>
-              <img src="/assets/hand-ok.svg" alt="" class="img-fluid h-50">
+              <img src="/assets/hand-ok.svg" alt="" class="img-fluid h-50 z-index-100">
             </div>
           </div>
       </div>
@@ -402,13 +417,17 @@
 
 
    <!--Contact section-->
-        <!-- <section class="container mt-2 pt-5 mb-5" data-aos="fade-up" data-aos-once="true">
-          <div class="row">
-            <div class="col-md-12">
+        <section class="container-fluid my-5 py-5 ps-0 ms-0" data-aos="fade-up" data-aos-once="true">
+          <div class="row mt-5 pt-5 ms-0 ps-0">
+            <div class="col-md-5 position-relative ms-0 ps-0 start-0 overflow-hidden">
+              <img src="/assets/dot-texture.svg" alt="" class="position-absolute start-0">
+            </div>
+            <div class="col-md-7 ps-0 pe-5 ms-0 py-5">
               <div class="section-title">
-                <h2 class="title" id="scrollspyHeading3">Let's talk! 💬</h2>
-                <p>
-                  You can find me on social media or use the form down below to send me a message!
+                <p class="ff-poppins fw-normal pb-0 mb-0 fs-4 text-black">contact</p>
+                <h2 class="fw-bold fs-1 text-black title" id="scrollspyHeading3">Hey, let's chat!</h2>
+                <p class="fs-5">
+                  Think I’d be a good fit for your team? <br> Send me a message using the form  below <br> and I’ll get back to you ASAP.
                 </p>
                 <hr />
                 <form method="POST" action="https://formsubmit.co/f165b4f927564f7cf0aa8c66802ed6aa">
@@ -416,34 +435,36 @@
                   <div class="form-group">
                     <div class="row">
                       <div class="col-md-6 mb-4">
-                        <label for="name">Name</label>
-                        <input id="name" name="name" type="text" class="form-control custom-shadow" required/>
+                        <label for="name" class="ff-poppins fw-normal pb-0 mb-0 fs-5 text-black">name</label>
+                        <input id="name" name="name" type="text" class="form-control custom-shadow b-radius-0" required/>
                       </div>
                       <div class="col-md-6 mb-4">
-                        <label for="email">Email</label>
-                        <input id="email" type="email" name="email" class="form-control custom-shadow" aria-describedby="emailHelp" required/>
+                        <label for="email" class="ff-poppins fw-normal pb-0 mb-0 fs-5 text-black">email</label>
+                        <input id="email" type="email" name="email" class="form-control custom-shadow b-radius-0" aria-describedby="emailHelp" required/>
                       </div>
                     </div>
                   </div>
                   <div class="form-group mb-4">
-                    <label for="subject">Subject</label>
-                    <input id="subject" name="subject" type="text" class="form-control custom-shadow" required/>
+                    <label for="subject" class="ff-poppins fw-normal pb-0 mb-0 fs-5 text-black">subject</label>
+                    <input id="subject" name="subject" type="text" class="form-control custom-shadow b-radius-0" required/>
                   </div>
                   <div class="form-group mb-4">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" class="form-control custom-shadow" rows="3" required></textarea>
+                    <label for="message" class="ff-poppins fw-normal pb-0 mb-0 fs-5 text-black">message</label>
+                    <textarea id="message" name="message" class="form-control custom-shadow b-radius-0" rows="3" required></textarea>
                   </div>
-                  <button type="submit" value="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" value="submit" class="btn btn-dark p-0 py-2 px-4">Confirm and Send</button>
                 </form>
               </div>
             </div>
+
+
           </div>
-        </section> -->
+        </section>
 
       <!--Footer-->
-    <footer class="mt-5">
-        <p class="text-black fw-normal d-flex justify-content-center pt-4">Developed with ❤️ by Jon Haataja</p>
-        <p><a class= "text-black d-flex justify-content-center pt-2 link-secondary text-decoration-none" href="privacy-policy.html">Privacy Policy</a></p>
+    <footer class="mt-5 pt-5 bg-black container-fluid">
+        <p class="text-white fw-normal d-flex justify-content-center pt-2">Developed with ❤️ by Jon Haataja</p>
+        <a class="text-white-50 d-flex justify-content-center pb-3 pt-2 link-secondary text-decoration-none" href="privacy-policy.html">Privacy Policy</a>
     </footer>
 
     <!--Scripts-->

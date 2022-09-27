@@ -8,7 +8,21 @@
     font-family: 'Inter', sans-serif;   
 }
 
-/*Yleisiä määrityksiä*/
+body {
+    background-color: #ffffff;
+    /* background-image: radial-gradient(#000000 0.5px, #ffffff 0.5px);
+    background-size: 10px 10px; */
+}
+
+/*Yleisiä määrityksiä alkaa*/
+
+.btn-dark {
+    border-radius: 0%!important;
+}
+
+.b-radius-0 {
+    border-radius: 0%!important;
+}
 
 .ff-poppins {
     font-family: Poppins, sans-serif;
@@ -34,10 +48,8 @@
     height: 30vh!important;
 }
 
-body {
-    background-color: #ffffff;
-    /* background-image: radial-gradient(#000000 0.5px, #ffffff 0.5px);
-    background-size: 10px 10px; */
+.vh-95 {
+    height: 95vh!important;
 }
 
 .bg-polka {
@@ -50,6 +62,17 @@ body {
     font-weight: 500;
 }
 
+.img-size-cover {
+    background-size: cover!important;
+}
+
+.min-w-100 {
+    min-width: 100%!important;
+}
+
+/*Yleisiä määrityksiä loppuu*/
+
+
 .h-minus-margins {
     margin-top: -2.3em;
 }
@@ -59,14 +82,20 @@ body {
     height: 10em;
     position: absolute;
     left: 0%;
-    top: 65%;
+    top: 43%;
 }
 
-
 .bg-circle {
-    background: url(/assets/circle.svg) no-repeat 20% 0%;
+    height: 100%;
+    background: url(/assets/circle.svg) no-repeat 60% 0%;
     position: absolute;
     z-index: -1;
+    overflow: display;
+}
+
+.animation-bob {
+    animation: MoveUpDown 2s linear infinite;
+    position: absolute;
 }
 
 .about-me {
@@ -86,6 +115,10 @@ body {
 
 .custom-margin {
     margin-top: 10em!important;
+}
+
+.custom-margin-hero {
+    margin-top: 13em!important;
 }
 
 /* .hover-shadow:hover {
@@ -135,3 +168,61 @@ body {
 }
 
 
+.form-control.custom-shadow:focus{
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px!important;
+    border: black solid 1px!important;
+}
+
+.form-control.custom-shadow:valid{
+   background-color: #f7f7f7;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 10px;
+    }
+  }
+
+  /* Tone down the animation to avoid vestibular motion triggers like scaling or panning large objects. */
+@media (prefers-reduced-motion) {
+    .animation-bob {
+        animation: none;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+    .side-line {
+        display: none;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+ @media (max-width: 768px) { 
+    .side-line {
+        display: none;
+    }
+
+    .custom-margin-hero {
+        margin-top: 9em!important;
+    }
+
+    .bg-circle {
+        background: url(/assets/circle.svg) no-repeat 55% 0%;
+        background-size: 29%;
+    }
+
+
+ }
+
+/* Large devices (desktops, 992px and up)*/
+/* @media (min-width: 992px) { ... } */
+
+/* X-Large devices (large desktops, 1200px and up)*/
+/* @media (min-width: 1200px) { ... } */
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+/* @media (min-width: 1400px) { ... } */
