@@ -1,7 +1,10 @@
 :root {
 --primary: rgb(148,130,255);
+--primary-dark: rgb(95, 83, 161);
 --primary-hover: rgb(112, 97, 194);
 --secondary: rgb(88,202,234);
+--white: rgba(255, 255, 255, 0);
+--dark-purple: rgba(49, 2, 75, 0);
 }
 
 *{
@@ -10,6 +13,18 @@
 
 body {
     color: rgb(24, 0, 33)!important;
+}
+
+.bg-primary-dark {
+    background-color: var(--primary-dark);
+}
+
+.bg-custom-white {
+    background-color: var(--white)!important;
+}
+
+.text-dark-purple {
+    color: var(--dark-purple)!important;
 }
 
 /*Cool shadow*/
@@ -251,6 +266,12 @@ footer
 
     .animation-rise-up {
         animation: none!important;
+    }
+}
+
+@media (max-width: 576px) {
+    .size-change-logo{
+        width: 70%;
     }
 }
 
