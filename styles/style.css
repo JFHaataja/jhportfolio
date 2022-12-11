@@ -132,9 +132,8 @@ a.custom-brand:hover::before
     2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
     6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
     12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-    100px 100px 80px rgba(0, 0, 0, 0.07)!important;
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042)!important;
+    border-radius: 20px!important;
 }
 
 .btn-primary:hover {
@@ -142,8 +141,7 @@ a.custom-brand:hover::before
     /* border: black solid .1rem!important; */
     box-shadow: 0px 1px 2px 0px rgba(194, 147, 255, 0.7),
     1px 2px 4px 0px rgba(194, 147, 255, 0.7),
-    2px 4px 8px 0px rgba(194, 147, 255, 0.7),
-    2px 4px 16px 0px rgba(194, 147, 255, 0.7)!important;
+    2px 4px 8px 0px rgba(194, 147, 255, 0.7)!important;
 }
 
 .btn-outline-primary {  
@@ -176,6 +174,10 @@ a.custom-brand:hover::before
     border: none;
 }
 
+.rounded-20 {
+    border-radius: 20px!important;
+}
+
 .card-body {
     background: #f7f7f7;
     transition: all ease 0.8s;
@@ -183,9 +185,7 @@ a.custom-brand:hover::before
     2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
     6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
     12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-    100px 100px 80px rgba(0, 0, 0, 0.07);
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042);
 } 
 
 .card-body:hover {
@@ -274,68 +274,3 @@ footer
         width: 70%;
     }
 }
-
-/* .animation-ease-in-left {
-    animation: ease-in-left .8s ease-in forwards;
-    opacity: 0;
-}
-
-.animation-ease-in-right {
-    animation: ease-in-right .8s ease-in forwards;
-    opacity: 0;
-}
-
-.animation-move-down {
-    animation: moveDown 1s ease-in-out forwards;
-    opacity: 0;
-} */
-
-/* @media only screen and (max-width: 400px){
-    .card-body {
-        box-shadow: none;
-    }
-} */
-
-
-
-/* @keyframes introLoad {
-    from {
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    to {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-}
-
-@keyframes moveDown {
-    from {
-        transform: translateY(-100px);
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes ease-in-left {
-    from {
-        transform: translateX(-200px);
-    }
-
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes ease-in-right {
-    from {
-        transform: translateX(200px);
-    }
-
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-} */
