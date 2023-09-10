@@ -1,5 +1,5 @@
 # jhportfolio
-This is the repo for my simple one-page (two if you count in the Success page &#128516;) portfolio website.
+This is the repo for my portfolio website.
 
 ## Tech used in the project
 
