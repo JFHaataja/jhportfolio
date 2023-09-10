@@ -28,6 +28,7 @@ body {
 .bg-grey {
     background: var(--grey)!important;
 }
+
 .btn-primary {
     background: var(--primary)!important;
     border: 1px solid var(--primary)!important;
@@ -259,9 +260,6 @@ body {
     min-width: 100%!important;
 }
 
-/*Yleisiä määrityksiä loppuu*/
-
-
 .h-minus-margins {
     margin-top: -2.3em;
 }
@@ -296,8 +294,8 @@ body {
       -webkit-transform: translateY(-8px);
       transform: translateY(-8px);
     }
-  }
-  @keyframes bob-on-hover {
+}
+@keyframes bob-on-hover {
     0% {
       -webkit-transform: translateY(-8px);
       transform: translateY(-8px);
@@ -310,19 +308,19 @@ body {
       -webkit-transform: translateY(-8px);
       transform: translateY(-8px);
     }
-  }
-  @-webkit-keyframes bob-on-hover-float {
+}
+@-webkit-keyframes bob-on-hover-float {
     100% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
     }
-  }
+}
   @keyframes bob-on-hover-float {
     100% {
       -webkit-transform: translateY(-8px);
       transform: translateY(-8px);
     }
-  }
+}
   .bob-on-hover {
     display: inline-block;
     vertical-align: middle;
@@ -347,43 +345,11 @@ body {
     animation-direction: normal, alternate;
   }
 
-.hover-shadow:hover {
-    transition: all 0.4s ease;
-    box-shadow: 0 8px 15px -2px rgb(0 0 0 / 10%),
-    0 8px 31px -2px rgb(0 0 0 / 10%);
-}
-
-/*Text appears on top of card when hover*/
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: gainsboro;
-}
-  
-  .card-body:hover .overlay {
-    opacity: 1!important;
-    box-shadow: 0 8px 31px -2px rgb(0 0 0 / 10%),
-    0 8px 31px -2px rgb(0 0 0 / 10%);
-}
-  
-  .text {
-    color: black;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
+    .hover-shadow:hover {
+        transition: all 0.4s ease;
+        box-shadow: 0 8px 15px -2px rgb(0 0 0 / 10%),
+        0 8px 31px -2px rgb(0 0 0 / 10%);
+    }
 
 .form-control.custom-shadow:focus{
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px!important;
@@ -595,17 +561,17 @@ body {
     font-weight: 400;
     line-height: 91%; /* 2.275rem */
     letter-spacing: -0.1875rem;
-}
+    }
 
-.projects-h1-styles {
+    .projects-h1-styles {
     font-size: 3.1125rem!important;
     font-style: normal;
     font-weight: 700;
     line-height: 79.5%; /* 2.23594rem */
     letter-spacing: -0.21094rem;
-}
+    }
 
-.single-project-h2-styles {
+    .single-project-h2-styles {
     color: #373435;
     font-size: 2.25rem;
     font-style: normal;
@@ -613,9 +579,9 @@ body {
     line-height: 59.5%; /* 1.78875rem */
     letter-spacing: -0.16875rem;
     text-transform: uppercase;
-}
+    }
 
-.single-project-h3-styles {
+    .single-project-h3-styles {
     color: #373435;
     font-size: 1.35rem;
     font-style: normal;
@@ -623,28 +589,26 @@ body {
     line-height: 79.5%; /* 1.1925rem */
     letter-spacing: -0.1125rem;
     text-transform: uppercase;
-}
+    }
 
-.single-project-p-subheading-styles {
+    .single-project-p-subheading-styles {
     color: #4F4F4F;
     font-size: 1.175rem;
     font-style: normal;
     font-weight: 400;
     line-height: 91%; /* 1.08063rem */
     letter-spacing: -0.08906rem;
-}
+    }
 
-.single-project-p-styles {
+    .single-project-p-styles {
     color: #4F4F4F;
     font-size: 1.1125rem;
     font-style: normal;
     font-weight: 400;
     line-height: 133%; /* 1.57938rem */
     letter-spacing: 0.01188rem;
+    }
 }
-
-
- }
 
 /* Large devices (desktops, 992px and up) */
  @media (min-width: 992px) {
@@ -653,9 +617,3 @@ body {
         font-size: .7em!important;
     }
  }
-
-/* X-Large devices (large desktops, 1200px and up)*/
-/* @media (min-width: 1200px) { ... } */
-
-/* XX-Large devices (larger desktops, 1400px and up)*/
-/* @media (min-width: 1400px) { ... } */
