@@ -536,11 +536,6 @@ body {
         display: none;
     }
 
-    .btn-dark {
-        padding: 1.3em!important;
-        font-size: .7em!important;
-    }
-
     .side-line {
         display: none;
     }
@@ -613,11 +608,3 @@ body {
     letter-spacing: 0.01188rem;
     }
 }
-
-/* Large devices (desktops, 992px and up) */
- @media (min-width: 992px) {
-    .btn-dark {
-        padding: 1.3em!important;
-        font-size: .7em!important;
-    }
- }
