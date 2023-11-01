@@ -108,8 +108,11 @@ body {
 }
 
 .bg-polka {
-    background-color: #ffffff;
+    /* background-color: #ffffff;
     background-image: radial-gradient(#000000 0.5px, #ffffff 0.5px);
+    background-size: 10px 10px; */
+    background-color: #ffffff;
+    background-image: radial-gradient(#818181 0.5px, #ffffff 0.5px);
     background-size: 10px 10px;
 }
 
@@ -212,10 +215,6 @@ body {
     letter-spacing: -0.1875rem;
 }
 
-.rounded-20 {
-    border-radius: 20px!important;
-}
-
 .about-me-h1-styles {
     color: #373435;
     font-size: 5rem;
@@ -274,6 +273,10 @@ body {
     position: absolute;
     left: 0%;
     top: 43%;
+}
+
+.border-bottom {
+    border-bottom: black 1.8px solid!important;
 }
 
 .animation-bob {
