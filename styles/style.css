@@ -17,6 +17,11 @@ body {
  
 }
 
+.navbar-toggler {
+    border: none!important;
+    margin-right: .5em;
+}
+
 .text-primary {
     color: var(--primary)!important;
 }
@@ -530,6 +535,10 @@ body {
 
     .toolkit-icon {
         height: 3.5em;
+    }
+
+    .vh-70 {
+        height: 50vh;
     }
 }
 
