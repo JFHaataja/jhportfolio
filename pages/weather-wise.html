@@ -23,13 +23,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
         <!--Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-        <title>Proggis Student Project Advertisement Web App | Projects | Jon Haataja | Front End Developer & UI/UX Designer | Tampere, Finland</title>
+        <title>Weather Wise - React Weather Application | Projects | Jon Haataja | Front End Developer & UI/UX Designer | Tampere, Finland</title>
         <!--AOS Scroll animation-->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!--style.css-->
         <link rel="stylesheet" href="/styles/style.css">
     </head>
-<body>
+<body class="bg-polka">
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg bg-white shadow sticky-top" data-aos="fade-up">
     <div class="container px-0">
@@ -67,51 +67,62 @@
     </div>
   </nav>
 
-  <section class="container-fluid bg-primary mb-5 pb-5 mb-md-0 pb-md-0">
-    <div class="container vh-60">
+  <section class="container-fluid bg-primary mb-5 pb-5 pb-md-0 mb-lg-0">
+    <div class="container vh-70 mb-5 mb-md-0">
       <div class="row">
         <div class="col-12 col-md-6 m-0 p-0 mt-0 mt-md-5 pt-5 ms-2 ms-md-0">
-          <span class="badge ff-poppins me-1 mb-3 bg-white text-dark p-2 rounded-pill" data-aos="zoom-in"><small>Design Prototype</small></span>
-          <span class="badge ff-poppins me-1 mb-3 bg-white text-dark p-2 rounded-pill" data-aos="zoom-in"><small>Front-End Development</small></span>
-          <h1 class="projects-h1-styles text-start my-2" data-aos="fade-right">Proggis</h1>
-          <p class="single-project-p-styles mt-3" data-aos="fade-right">Student project startup website design.</p>
+            <span class="badge ff-poppins me-1 mb-3 bg-white text-dark p-2 rounded-pill" data-aos="zoom-in"><small>Front-End Development</small></span>
+            <span class="badge ff-poppins me-1 mb-3 bg-white text-dark p-2 rounded-pill" data-aos="zoom-in"><small>Design Prototype</small></span>
+            <span class="badge ff-poppins me-1 mb-3 bg-white text-dark p-2 rounded-pill" data-aos="zoom-in"><small>Figma</small></span>
+            <span class="badge ff-poppins me-1 mb-3 bg-white text-dark p-2 rounded-pill" data-aos="zoom-in"><small>React</small></span>
+            <h1 class="projects-h1-styles text-start my-2" data-aos="fade-right">Weather Wise</h1>
+            <p class="single-project-p-styles mt-3" data-aos="fade-right">A weather application Front-End project built with React and AccuWeather API.</p>
+            
+            <div class="d-flex justify-content-start mt-2 mb-md-5 pb-5" data-aos="fade-right">
+                <a href="https://weather-wise-app.vercel.app/" class="btn btn-dark py-3 px-4 rounded-pill">Go Check Out the Live App</a>
+                <a href="https://github.com/JFHaataja/react-weather-app" class="align-self-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Weather Wise GitHub">
+                  <img src="/assets/github-logo.svg" alt="" class="btn img-fluid" aria-hidden="true" focusable="false">
+                  <span class="visually-hidden">Go check out the project GitHub page</span>
+                </a>
+            </div>
+
         </div>
-        <div class="col-12 col-md-6 m-0 p-0 mb-5 pb-5 mb-md-0 pb-md-0">
-          <img src="/assets/proggis-dashboard.png" alt="" class="img-fluid vh-60 w-auto" data-aos="fade-left">
+        <div class="col-12 col-md-6 mb-5 pb-5 mb-md-0 pb-md-0">
+          <img src="/assets/weather-wise-hero.png" alt="" class="img-fluid m-auto vh-70 w-auto mb-5 pb-5 mb-md-0 pb-md-0" data-aos="fade-left">
         </div>
       </div>
     </div>
   </section>
 
   <section class="container mt-5 pt-5 mt-md-0 pt-md-0">
-    <div class="mb-5 pt-4 pt-md-0 my-md-0">
+    <div class="mb-5 pt-5 pt-md-0 my-md-0">
       <div class="row mt-5 pt-5 pt-md-0">
-        <div class="col-md-4">
-          <p class="pb-0 mb-2 single-project-p-subheading-styles">PROJECT</p>
+        <div class="col-md-4 mt-5 pt-5 mt-md-0 pt-md-0">
+          <p class="pb-0 mb-2 single-project-p-subheading-styles">Project</p>
           <h2 class="single-project-h2-styles mb-4 mb-md-0">Information</h2>
         </div>
         <div class="col-md-4 mt-3 mt-md-0">
-          <h3 class="single-project-h3-styles">Inspiration</h3>
-          <p class="single-project-p-styles">
-            The design inspiration for this project came from the illustrations. I really like the default colors of these illustrations (especially the yellow) so I
-            ended up using them in my designs.
+          <h3 class="single-project-h3-styles">Project overview</h3>
+          <p class="single-project-p-styles">I first created the design prototype of the weather app using Figma and Adobe Express. The app was built
+            with React and it utilises the AccuWeather API to fetch the current weather data. I am currently working 
+            on the app so the whole project is still work in progress.
           </p>
         </div>
         <div class="col-md-4">
           <h3 class="single-project-h3-styles mt-2 mt-md-0">The goal</h3>
-          <p class="single-project-p-styles">This project was a student startup type of project where we planned and starting building a web application for student project advertising.
-            My main responsibilities in the project were UI/UX Design and Front-End Development. I designed several views for the app and one of them was a dashboard view.
+          <p class="single-project-p-styles">The goal of this project was (and still is) to practice creating dark-mode design layouts and fetching
+            data from a public API.
           </p>
         </div>
       </div>
       <div class="text-center mb-5">
-        <img src="/assets/proggis-dashboard.png" alt="" class="img-fluid w-75" data-aos="zoom-in">
+        <img src="/assets/weather-wise-hero.png" alt="" class="img-fluid w-75" data-aos="zoom-in">
       </div>
     </div>
   </section>
 
-    <!--Footer-->
-    <footer class="py-5 bg-black container-fluid">
+      <!--Footer-->
+      <footer class="py-5 bg-black container-fluid">
         <p class="text-white fw-normal d-flex justify-content-center m-0 p-0">Developed with ❤️ by Jon Haataja</p>
     </footer>
 
